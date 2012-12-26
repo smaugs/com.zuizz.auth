@@ -1,0 +1,1 @@
+{"title":"Remove User from a Role","request":"com.zuizz.auth.role.user","method":"DELETE","description":"Remove one or more user from a role.\nInfo: This function is related with [DELETE] ~.user.role ","parameter":[],"states":[],"permission":[],"mimetype":[]}

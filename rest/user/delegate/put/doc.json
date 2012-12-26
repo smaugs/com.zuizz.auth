@@ -1,0 +1,1 @@
+{"title":"Set a Delegation for a User","request":"com.zuizz.auth.user.delegate","method":"PUT","description":"Grant the same access rights for another User. \nPrivate data is not accesible.","parameter":[],"states":[],"permission":[],"mimetype":[]}

@@ -1,0 +1,1 @@
+{"title":"List all Users in a Role","request":"com.zuizz.auth.role.user","method":"GET","description":"List all users of this role. ","parameter":[],"states":[],"permission":[],"mimetype":[]}

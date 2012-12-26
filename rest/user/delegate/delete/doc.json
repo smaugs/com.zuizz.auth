@@ -1,0 +1,1 @@
+{"title":"Remove a Delegation for a User","request":"com.zuizz.auth.user.delegate","method":"DELETE","description":"Remove the delegation.","parameter":[],"states":[],"permission":[],"mimetype":[]}

@@ -1,0 +1,1 @@
+{"title":"Disable a Role","request":"com.zuizz.auth.role","method":"DELETE","description":"Disable or deactivate a role","parameter":[],"states":[],"permission":[],"mimetype":[]}

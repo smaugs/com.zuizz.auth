@@ -1,0 +1,1 @@
+{"title":"Add User to a Role","request":"com.zuizz.auth.role.user","method":"PUT","description":"Add one or more user to a role.\nInfo: This function is related with ~.user.role","parameter":[],"states":[],"permission":[],"mimetype":[]}

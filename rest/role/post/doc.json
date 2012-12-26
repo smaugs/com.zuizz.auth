@@ -1,0 +1,1 @@
+{"title":"Update a Role","request":"com.zuizz.auth.role","method":"POST","description":"Update role information like the name or the description of a role.","parameter":[],"states":[],"permission":[],"mimetype":[]}

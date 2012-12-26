@@ -1,0 +1,16 @@
+<div id="ZU_auth">
+<form method="post" action="{$smarty.request.route}">
+<h2 {if $smarty.session.ZUIZZ.AUTH.is_auth}class="eingeloggt"{/if}{if $ZU_auth_incorrect}class="loginfehler"{/if}>Login</h2>
+<dl>
+	<dt>username</dt>
+	<dd><input type="text" name="f15username" value="{$ZU_feature.values.username}" /></dd>
+	<dt>password</dt>
+	<dd><input type="password" name="f15credentials" value="{$ZU_feature.values.credentials}" />{if $ZU_feature.data.auth_failed}<br /><span class="error">auth failure</span>{/if}</dd>
+	<dt>&nbsp;</dt>
+	<dd><input type="submit" /></dd>
+</dl>
+{if $smarty.session.ZUIZZ.USER.SETTINGS.default_route}
+<a href="{$smarty.session.ZUIZZ.USER.SETTINGS.default_route}">desktop</a>
+{/if}
+</form>
+</div>

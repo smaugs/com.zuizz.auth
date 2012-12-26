@@ -1,0 +1,1 @@
+{"title":"List Delegation for a User","request":"com.zuizz.auth.user.delegate","method":"GET","description":"List the delegation settings for a user. Role admin can list all, owner can list his delegation settings.","parameter":[],"states":[],"permission":[],"mimetype":[]}
