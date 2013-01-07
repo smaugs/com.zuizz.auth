@@ -1,6 +1,6 @@
-<div class="container login mod modAuth">
+<div class="container login mod mod-auth">
     <div class="page-header">
-        <h1 {if $smarty.session.ZUIZZ.AUTH.is_auth}class="eingeloggt"{/if}{if $ZU_auth_incorrect}class="loginfehler"{/if}>Login</h1>
+        <h1{if $smarty.session.ZUIZZ.AUTH.is_auth} class="eingeloggt"{/if}{if $ZU_auth_incorrect} class="loginfehler"{/if}>Login</h1>
     </div>
     <div class="row">
         <div class="span12">
@@ -32,7 +32,6 @@
                         <button type="submit" class="btn btn-primary">Login</button>
                     </div>
                 </fieldset>
-
             </form>
         </div>
     </div>
