@@ -1,37 +1,40 @@
 <div class="container login mod mod-auth">
     <div class="page-header">
-        <h1{if $smarty.session.ZUIZZ.AUTH.is_auth} class="eingeloggt"{/if}{if $ZU_auth_incorrect} class="loginfehler"{/if}>Login</h1>
+        <h1{if $smarty.session.ZUIZZ.AUTH.is_auth} class="eingeloggt"{/if}{if $ZU_auth_incorrect} class="loginfehler"{/if}>Willkommen</h1>
     </div>
     <div class="row">
         <div class="span12">
-            <p>
-                Bitte melden Sie sich mit Ihrem <strong>Benutzername</strong> und <strong>Passwort</strong> an.
-            </p>
+            Bitte melden Sie sich mit Ihrem <strong>Benutzername</strong> und <strong>Passwort</strong> an.
         </div>
     </div>
+
+    <hr />
+
     <div class="row">
         <div class="span12">
             <form method="post" class="form-horizontal">
-                <fieldset>
-                    <legend></legend>
-                    <div class="control-group{if $ZU_feature.data.auth_failed} error{/if}">
-                        <label class="control-group-label" for="f15username">Benutzername</label>
-                        <div class="controls">
-                            <input type="text" class="input-xlarge" id="f15username" name="f15username" value="{$ZU_feature.values.username}">
-                        </div>
+                <div class="control-group{if $ZU_feature.data.auth_failed} error{/if}">
+                    <label class="control-label" for="f15username">Benutzername</label>
+                    <div class="controls">
+                        <input type="text" class="input-xlarge" id="f15username" name="f15username" value="{$ZU_feature.values.username}">
                     </div>
-                    <div class="control-group{if $ZU_feature.data.auth_failed} error{/if}">
-                        <label class="control-group-label" for="f15credentials">Passwort</label>
-                        <div class="controls">
-                            <input type="password" class="input-xlarge" id="f15credentials" name="f15credentials">
-                            {if $ZU_feature.data.auth_failed}<br /><br /><span class="error">Anmeldung fehlgeschlagen</span>{/if}
-                            <p class="help-block"><a href="/reset_password.html">Passwort vergessen</a></p>
-                        </div>
+                </div>
+
+                <div class="control-group{if $ZU_feature.data.auth_failed} error{/if}">
+                    <label class="control-label" for="f15credentials">Passwort</label>
+                    <div class="controls">
+                        <input type="password" class="input-xlarge" id="f15credentials" name="f15credentials">
                     </div>
-                    <div class="control-group">
+                </div>
+
+                <div class="control-group{if $ZU_feature.data.auth_failed} error{/if}">
+                    <div class="controls">
                         <button type="submit" class="btn btn-primary">Login</button>
+                        {if $ZU_feature.data.auth_failed}
+                        <span class="help-inline error">Anmeldung fehlgeschlagen</span>
+                        {/if}
                     </div>
-                </fieldset>
+                </div>
             </form>
         </div>
     </div>
