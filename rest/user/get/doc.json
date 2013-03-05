@@ -1,1 +1,36 @@
-{"title":"Receive User Details","request":"com.zuizz.auth.user","method":"GET","description":"Role Administrator can receive a list of users or detailed information for a user. Owner can receive detailed information about himself.","parameter":{"identifier":{"description":"userID for a specific user or empty for yourself","name":"identifier","type":2,"required":false,"default_value":null,"regularexpression":""}},"states":{"200":{"code":200,"message":"","description":"Ok"},"404":{"code":404,"message":"","description":"User not found"}},"permission":[{"role":"User","description":"User can receive data about himself"},{"role":"Admin","description":"Role admin can receive data for all users"}],"mimetype":{"json":{"name":"json","is_default":true,"response":"Generic user information as array.\n"}}}
+{"title":"Receive User Details", "request":"com.zuizz.auth.user", "method":"GET", "description":"Role Administrator can receive a list of users or detailed information for a user. Owner can receive detailed information about himself.", "parameter":{
+    "identifier":{
+        "description":"userID for a specific user or empty for yourself",
+        "name":"identifier",
+        "type":2,
+        "required":false,
+        "default_value":null,
+        "regularexpression":""
+    }
+}, "states":{
+    "200":{
+        "code":200,
+        "message":"",
+        "description":"Ok"
+    },
+    "404":{
+        "code":404,
+        "message":"",
+        "description":"User not found"
+    }
+}, "permission":[
+    {
+        "role":"User",
+        "description":"User can receive data about himself"
+    },
+    {
+        "role":"Admin",
+        "description":"Role admin can receive data for all users"
+    }
+], "mimetype":{
+    "json":{
+        "name":"json",
+        "is_default":true,
+        "response":"Generic user information as array.\n"
+    }
+}}
