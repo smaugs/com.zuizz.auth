@@ -21,11 +21,6 @@ if (isset ($this->values ['username'])) {
     $this->data ['auth_failed'] = FALSE;
 }
 
-// redirect
-if (ZU::is_auth() && isset($_SESSION ['ZUIZZ'] ['PERM'] ['ROLE'])) {
-    // TODO:: redirect anhand User settings (last page?) implementieren
-
-}
 
 $this->fetch();
 

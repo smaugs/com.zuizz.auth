@@ -19,6 +19,7 @@ if (ZU::is_auth() && isset($_SESSION ['ZUIZZ'] ['PERM'] ['ROLE'])) {
             if($data){
             // recht auf zielpage prüfen
             if (ZU::check_permission(100, $data->get('page_id'), 1)) {
+
                 header('Location: /' . $target);
             }
 

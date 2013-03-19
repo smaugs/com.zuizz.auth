@@ -13,8 +13,7 @@ class ZUAUTH implements ZUAUTH_interface{
 	}
 
 	public function login($username, $credentials) {
-		if (isset ( $username ) && isset ($credentials)) {
-
+		if (isset ( $username ) && isset ($credentials) && !empty($username) ) {
             $tmp = ORM::for_table('org_user')->where('name', $username)->find_one()->as_array();
 
 			if ($username == $tmp['name'] && $tmp['password'] == md5 ( $GLOBALS ['ZUIZZ']->config->system ['salt'] . $credentials . $GLOBALS ['ZUIZZ']->config->system ['salt'] )) {
