@@ -73,7 +73,7 @@
                 url: '/rest/com.zuizz.auth.passwd/',
                 type: 'PUT',
                 data: {
-                    // TODO:: fill this variables with values
+
                     credentials: self.new_password.val(),    //string
                     old_credentials: self.old_password.val()    //string
                 },
