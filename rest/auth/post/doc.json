@@ -1,1 +1,45 @@
-{"title":"Authenticate","request":"com.zuizz.auth.auth","method":"POST","description":"Authenticate User and receive the session_token which is needed for further communication with non public elements\nUse com.zuizz.auth.terminate to terminate the connection","parameter":{"credentials":{"description":"Password","name":"credentials","type":1,"required":true,"default_value":null,"regularexpression":null},"username":{"description":"Username","name":"username","type":1,"required":true,"default_value":null,"regularexpression":null}},"states":{"200":{"code":200,"message":"OK","description":"authentification OK"},"401":{"code":401,"message":"Unauthorized","description":"authentification did not work, user is not authenticated"}},"permission":[{"role":"Public","description":"Everyone is allowed to authentificate"}],"mimetype":{"json":{"name":"json","is_default":true,"response":"{&quot;session_token&quot;:&quot;c4e3d9db03e2e4e575c2553b6b1b70c6&quot;,&quot;message&quot;:&quot;authentification OK&quot;}"},"xml":{"name":"xml","is_default":false,"response":"&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;\n&lt;auth&gt;\n  &lt;session_token&gt;ef7da633a0c0653ba08bfb741ac6abd7&lt;\/session_token&gt;\n  &lt;message&gt;authentification OK&lt;\/message&gt;\n&lt;\/auth&gt;\n"}}}
+{"title": "Authenticate", "request": "com.zuizz.auth.auth", "method": "POST", "description": "Authenticate User and receive the session_token which is needed for further communication with non public elements\nUse com.zuizz.auth.terminate to terminate the connection", "parameter": {
+    "credentials": {
+        "description": "Password",
+        "name": "credentials",
+        "type": 1,
+        "required": true,
+        "default_value": null,
+        "regularexpression": null
+    },
+    "username": {
+        "description": "Username",
+        "name": "username",
+        "type": 1,
+        "required": true,
+        "default_value": null,
+        "regularexpression": null
+    }
+}, "states": {
+    "200": {
+        "code": 200,
+        "message": "OK",
+        "description": "authentification OK"
+    },
+    "401": {
+        "code": 401,
+        "message": "Unauthorized",
+        "description": "authentification did not work, user is not authenticated"
+    }
+}, "permission": [
+    {
+        "role": "Public",
+        "description": "Everyone is allowed to authentificate"
+    }
+], "mimetype": {
+    "json": {
+        "name": "json",
+        "is_default": true,
+        "response": "{&quot;session_token&quot;:&quot;c4e3d9db03e2e4e575c2553b6b1b70c6&quot;,&quot;message&quot;:&quot;authentification OK&quot;}"
+    },
+    "xml": {
+        "name": "xml",
+        "is_default": false,
+        "response": "&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;\n&lt;auth&gt;\n  &lt;session_token&gt;ef7da633a0c0653ba08bfb741ac6abd7&lt;\/session_token&gt;\n  &lt;message&gt;authentification OK&lt;\/message&gt;\n&lt;\/auth&gt;\n"
+    }
+}}
